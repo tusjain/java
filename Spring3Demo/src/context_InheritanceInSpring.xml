@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ 	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ 	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <bean id="parent" class="inheritanceInSpring.MyBean" >
+	  <property name="name" value="parent.com"/>
+   </bean>
+
+  <bean id="child" class="inheritanceInSpring.MyBean" parent="parent">
+	  <property name="address" value="Rohini"/>
+	  <property name="name" value="KashIt.com"/>
+  </bean>
+
+  <bean id="subchild" class="inheritanceInSpring.MyBean" parent="child">
+	  <property name="name" value="PleaseOK.com"/>
+ 	  <property name="address" value="Noida"/>
+   </bean>
+</beans>
