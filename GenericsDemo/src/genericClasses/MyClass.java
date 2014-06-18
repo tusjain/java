@@ -1,0 +1,5 @@
+package genericClasses;
+
+class MyClass {
+
+}
