@@ -1,5 +1,6 @@
 // Import required java libraries
 import java.io.*;
+
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
@@ -13,6 +14,7 @@ public class HelloWorld extends HttpServlet {
   public void init() throws ServletException{
       // Do required initialization
       message = "Hello World++++++99999";
+      System.out.println(message);
   }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
@@ -22,6 +24,13 @@ public class HelloWorld extends HttpServlet {
       // Actual logic goes here.
       PrintWriter out = response.getWriter();
       out.println("<h1>" + message + "  in  Post</h1>");
+     try {
+		Thread.sleep(10000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+      //destroy();
   }
   
   /**
@@ -31,7 +40,4 @@ public class HelloWorld extends HttpServlet {
 	  doGet(request, response);
   }
   */
-  public void destroy(){
-      // do nothing.
-  }
-}
+ }
