@@ -14,11 +14,11 @@ http://www.springframework.org/schema/context/spring-context-3.0.xsd">
  
     <context:annotation-config />
      
-  <bean id="employee" class="autowire.constructor.EmployeeBean" autowire="constructor">
+  <com.bean id="employee" class="autowire.constructor.EmployeeBean" autowire="constructor">
         <property name="fullName" value="Obama"/>
-    </bean>
+    </com.bean>
     
-    <bean id="department" class="autowire.constructor.DepartmentBean" >
+    <com.bean id="department" class="autowire.constructor.DepartmentBean" >
         <property name="name" value="USA President" />
-    </bean>
+    </com.bean>
  </beans>

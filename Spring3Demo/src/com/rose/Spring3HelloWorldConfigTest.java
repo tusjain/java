@@ -10,7 +10,7 @@ public class Spring3HelloWorldConfigTest {
 	AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Spring3HelloWorldConfig.class);
 	System.out.println("Calling Bean method: sayHello()");
 	
-	//Retrieve the bean from Container
+	//Retrieve the com.bean from Container
 	Spring3HelloWorld myBean = (Spring3HelloWorld) context.getBean("spring3HelloWorld");
 	myBean.sayHello();
 	}

@@ -7,6 +7,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class MainApp {
 	
 	public static void main(String[] args) {
+		/*
+		 KashItHello KashItHelloBean = new KashItHello();
+		 KashItHelloBean.hello();
+		*/
 		
 	      ApplicationContext context = new ClassPathXmlApplicationContext("SpringHelloWorld.xml");
 	      

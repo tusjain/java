@@ -1,5 +1,5 @@
 
-package bean;
+package com.bean;
 
 /**
  * Spring dependency injection constructor annotation

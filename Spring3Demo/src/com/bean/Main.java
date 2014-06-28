@@ -1,13 +1,12 @@
-package bean;
+package com.bean;
 
 import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.core.io.ClassPathResource;
 
+import com.bean.Address;
+import com.bean.Company;
 import com.rose.Spring3HelloWorld;
-
-import bean.Address;
-import bean.Company;
 
 public class Main {
 
@@ -17,19 +16,17 @@ public class Main {
 		
 		
 		//XmlBeanFactory beanFactory = new XmlBeanFactory(new ClassPathResource("SpringHelloWorld.xml"));
-		
 		//Spring3HelloWorld myBean = (Spring3HelloWorld) beanFactory.getBean("Spring3HelloWorldBean");
 		
 		
 		//ApplicationContext context = new ClassPathXmlApplicationContext("SpringHelloWorld.xml");
-	    
 	    // KashItHello obj = (KashItHello) context.getBean("KashItHelloBean");
 
 		/*
 		 * Below line will scan the given package for Components. It will be
-		 * refreshed then to get bean from the same.
+		 * refreshed then to get com.bean from the same.
 		 */
-		annotationContext.scan("bean");
+		annotationContext.scan("com.bean");
 		annotationContext.refresh();
 
 		/*
