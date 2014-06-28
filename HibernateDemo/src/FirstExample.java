@@ -5,9 +5,7 @@ public class FirstExample {
 	
 	public static void main(String[] args) {
 		SessionFactory sessionFactory = null;
-		try{
-			
-	
+		try{	
 		sessionFactory = new Configuration().configure().buildSessionFactory();
 		Session session = sessionFactory.openSession();
 		Contact cnt = new Contact();
