@@ -11,6 +11,7 @@ public class Counter {
 		System.out.println("I am in increment");
 		System.out.println("counter value before increment  : "+ count);
 		++this.count;
+		++this.count;
 		//++this.count;
 		System.out.println("counter value after increment  : "+ count);
 	}

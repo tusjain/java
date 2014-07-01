@@ -10,8 +10,8 @@ public class HelloWorldController extends AbstractController {
 	private Processor processor;
    	@Override
     protected ModelAndView handleRequestInternal(HttpServletRequest request, HttpServletResponse response) throws Exception{
-    	//String processedNameValue=processor.processName(request.getParameter("textName"));
-   		String processedNameValue="<html><head><meta charset='ISO-8859-1'><title>This is my Title</title></head><body>This is index page</body></html>";
+    	String processedNameValue=processor.processName(request.getParameter("textName"));
+   		//String processedNameValue="<html><head><meta charset='ISO-8859-1'><title>This is my Title</title></head><body>This is index page</body></html>";
    		
     	return new ModelAndView("result","processedNameKey", processedNameValue);
     }

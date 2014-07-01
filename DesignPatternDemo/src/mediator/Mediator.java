@@ -40,7 +40,6 @@ public class Mediator {
 	void search() {
 	btnSearch.setEnabled(false);
 	btnView.setEnabled(true);
-	55
 	btnBook.setEnabled(true);
 	show.setText("searching...");
 	}

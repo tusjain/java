@@ -5,8 +5,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.kashit.customer.services.CustomerService;
  
-
- 
 public class App {
 	public static void main(String[] args) {
 		ApplicationContext appContext = new ClassPathXmlApplicationContext(	new String[] { "Spring-Customer.xml" });

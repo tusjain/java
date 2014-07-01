@@ -1,5 +1,7 @@
 package mediator;
 
+import javax.swing.JPanel;
+
 public class MediatorDemo {
 	Mediator med = new Mediator();
 

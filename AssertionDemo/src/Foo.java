@@ -3,16 +3,16 @@ public class Foo{
     assert 0 <= value;
     System.out.println( "OK" );
   }
-  /*
+ 
   public static void main( String[] args ) {
     Foo foo = new Foo();
-    System.out.print( "foo.m1(  1 ): " );
+    System.out.println( "foo.m1(  1 ): " );
     foo.m1( 1 );
-    System.out.print( "foo.m1( -1 ): " );
+    System.out.println( "foo.m1( -1 ): " );
     foo.m1( -1 );
   }
-  */
   
+  /*
   public static void main( String[] args ) {
 	    Foo foo = new Foo();
 	    System.out.print( "foo.m1( 1 ): " );
@@ -20,5 +20,5 @@ public class Foo{
 	    System.out.print( "foo.m1( -1 ): " );
 	    foo.m1( (new Integer(args[1]).intValue())  );
 	  }
-  
+  */
 }

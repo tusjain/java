@@ -1,5 +1,7 @@
 package memento;
 
+import java.util.ArrayList;
+
 public class Mediator {
 	BtnDice btnDice;
 	BtnPrevious btnPrevious;
@@ -47,7 +49,6 @@ public class Mediator {
 	ct = undo.size()-1;
 	Memento num = (Memento)undo.get(ct);
 	show.setText(""+num.getNum());
-	61
 	undo.remove(ct);
 	}
 	if (undo.size() == 0)
