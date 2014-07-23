@@ -3,17 +3,17 @@ public class MainClass {
 	public static void main(String[] args) {
 		//PrimeThread pt = new PrimeThread(2);
 		try{
-			/*
-			Runnable h = new PrimeThread(5);
+			
+			/*Runnable h = new PrimeThread(5);
 			Thread t1 = new Thread(h);
 			Thread t2 = new Thread(h);
 			t1.start();
 			t1.sleep(10000);
-			t2.start();
-			*/
+			t2.start();*/
+			
 			
 			PrimeThread h1 = new PrimeThread();
-			h1.setStartNumber(30);
+			h1.setStartNumber(31);
 			Thread t3 = new Thread(h1);
 			t3.start();
 			Thread.sleep(1); 

@@ -1,5 +1,5 @@
-public class PrimeThread implements Runnable{
-//public class PrimeThread extends Thread{
+//public class PrimeThread implements Runnable{
+public class PrimeThread extends Thread{
 //public class PrimeThread extends DummySuperClass implements Runnable{
 	float finalNumber;
 	int startNumber;

@@ -3,7 +3,7 @@ package string;
 public class StringManupulation {
 	
 	public static void main(String[] args) {
-		/*
+		
 		String str1 = "Hello";
 		String str2 = new String("Hello");  // not a preferred way because it is 2 step process
 		
@@ -22,7 +22,7 @@ public class StringManupulation {
 		
 		StringBuffer stBuffer = new StringBuffer("Hello");
 		StringBuilder stBuilder = new StringBuilder("Hello");
-		*/
+		
 		String s3 = "Hello";
 		String s4 = "Hello";
 		
@@ -38,6 +38,10 @@ public class StringManupulation {
 		}else{
 			System.out.println(" Comapring two strings by equals and strings are not same");
 		}
+		
+		// String --> Immutable
+		// StringBuilder --> Mutable, Not Thread safe
+		// StringBuffer --> Mutable, Thread safe
 		
 		
 	}

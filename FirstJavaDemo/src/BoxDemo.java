@@ -1,4 +1,3 @@
-
 public class BoxDemo {
 
 	public static void main(String args[]) {
@@ -7,6 +6,7 @@ public class BoxDemo {
 			Box myBox3 = new Box(2, 7, 9);
 			mybox1.setDim(10,20,15);
 			mybox2.setDim(3,6,9);
+			
 			/*
 			System.out.println("Volume is :" + mybox1.volume());
 			System.out.println("Volume is :" + mybox2.volume());
@@ -26,6 +26,10 @@ public class BoxDemo {
 			System.out.println(" material of Box2 is : "+ mybox2.material);
 			
 			System.out.println(" material of Box is : "+ Box.material);
+			
+			mybox1.material= "Copper";
+			
+			System.out.println("myBox2 is " + mybox2.material);
 			
 			
 			
