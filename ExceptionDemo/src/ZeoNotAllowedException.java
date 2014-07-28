@@ -1,4 +1,3 @@
-
 public class ZeoNotAllowedException extends RuntimeException{
 //public class ZeoNotAllowedException extends Exception{
 	
@@ -17,5 +16,5 @@ public class ZeoNotAllowedException extends RuntimeException{
    
    public void printStackTrace(){
 	  System.out.println(" Here is stackstrace print of ZeoNotAllowedException");
-	  }
+   }
 }

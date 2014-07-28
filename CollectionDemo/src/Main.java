@@ -5,8 +5,8 @@ public class Main {
 		//SetDemo sd = new SetDemo();
 		//sd.m1();
 		
-		MapDemo md = new MapDemo();
-		md.m1();
+		/*MapDemo md = new MapDemo();
+		md.m1();*/
 		
 	}
 

@@ -10,7 +10,9 @@ public class ArrayListDemo {
         companies.add("Apple");
         companies.add("IBM");
         companies.add("Microsoft");
-        
+        companies.add("Oracle");
+        companies.add(null);
+               
         //companies.add(7);
         
         //companies.add(new Integer(7));
@@ -18,21 +20,26 @@ public class ArrayListDemo {
         
         
         for(String company:companies) {
-        //for(Object copmany:companies) {
-        System.out.println(company);
+	        //for(Object copmany:companies) {
+	        System.out.println(company);
         }
+        
         Iterator<String> itr=companies.iterator();
         String company = null;
         while(itr.hasNext()){
         	company=itr.next();
         	System.out.println(company);
         	}
+        
+        
 
         
         Object[] cc=companies.toArray();
         System.out.println(cc[0]);//Apple
         System.out.println(cc[1]);//IBM
         System.out.println(cc[2]);//Microsoft
+        
+        System.out.println(" Capacity of array List: " + companies.size());
         
 
 

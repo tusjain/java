@@ -24,6 +24,7 @@ public class TryCatchThrow {
 	 
 	 public static void main(String[] args){
 		 TryCatchThrow tet = new TryCatchThrow();
+		 //System.out.println("addition of two strings is : " + tet.addition("0.0", "3.6"));
 		 try{
 			 //System.out.println( "addition of two float numbers is : " + tet.addition(1.0f, 2.4f));
 			 //System.out.println("addition of two strings is : " + tet.addition("2.0", "3.6"));
