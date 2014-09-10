@@ -15,14 +15,14 @@ public class Execution {
 		
 		//Camry myThirdLE = new CamryLE("Silk");
 		
-		//Car myFourthLE = new CamryLE("Fine Silk");
+		Car myFourthLE = new CamryLE("Fine Silk");
 		
-		Camry myFifthLE = new CamryLE();
+		//Camry myFifthLE = new CamryLE();
 		
 		
 		//myLE.consumeFuel();
 		//myThirdLE.consumeFuel();
-		//myFourthLE.consumeFuel();
+		myFourthLE.consumeFuel();
 		
 		
 	}

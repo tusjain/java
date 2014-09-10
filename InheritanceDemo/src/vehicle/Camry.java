@@ -6,7 +6,7 @@ public class Camry extends PetrolCar {
 	Wheel wheel[] = new Wheel[4];
 	
 	String logo="CAMRY";
-	int seats;
+	final int seats=0;
 	void airConditioning(){
 		System.out.println("Camry is doing air conditioning");
 	}

@@ -4,9 +4,9 @@ public class TryCatchThrow {
 		return a+b;
 	 }
 	 
-	 float addition (String a, String b) {
+	 //float addition (String a, String b) {
 		 //throw new NullPointerException("Sorry zeros are not allowed");
-	 //float addition (String a, String b) throws NumberFormatException {
+	 float addition (String a, String b) throws NumberFormatException, NullPointerException  {
 		System.out.println(" I am in addition string & string");
 		Float fa = new Float(a);
 		float a1 = fa.floatValue();

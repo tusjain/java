@@ -9,6 +9,14 @@
 This jsp has useBean <br>
 
 <jsp:useBean id="myBean" class = "com.kashit.bean.Student" />
+
+<%                                     
+
+com.kashit.bean.Student std1 = new com.kashit.bean.Student();
+std1.setName("Obama");
+
+%>
+
 <jsp:useBean id="myBean1" class = "com.kashit.bean.Student" />
 
 <jsp:setProperty name="myBean" property="name" value="Micheal Jackson" />

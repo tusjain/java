@@ -20,9 +20,10 @@
  out.println(request.getParameter("t1"));
  
  
- out.println(request.getAttribute("t22"));
+ out.println(request.getAttribute("t11"));
  
- String s1 = request.getParameter("t22");
+ 
+ String s1 = request.getParameter("t11");
  out.println(s1);
  
  session.setAttribute("myFirstAttribute", s1);
@@ -39,10 +40,10 @@
  <input type="submit" value="Submit"  name="b1" id="b11"></input>
  
 
-  <%-- jsp:forward page="processSeesionInfo.jsp"></jsp:forward --%>
+  <jsp:forward page="processSeesionInfo.jsp"></jsp:forward>
   
   
-  <jsp:forward page="http://google.com"></jsp:forward>
+  <%--<jsp:forward page="http://google.com"></jsp:forward>  --%>
  
  </form>
 </body>

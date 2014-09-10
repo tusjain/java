@@ -9,6 +9,19 @@ public class Client {
 		float b = 0.0f;
 		double angleInRadian = 0;
 		
+		
+		Calculation cal = new Calculation();
+		//System.out.println("Lets do addition of " + a + " & " + b + "= "  + cal.addition(a, b));
+		
+		//System.out.println("Lets do subtraction of " + a + " & " + b + "= "  + cal.subtraction(a, b));
+		
+		
+		//System.out.println("Lets do multiplication of " + a + " & " + b + "= "  + cal.multiplication(a, b));
+		
+		
+		System.out.println("Lets do division of " + a + " & " + b + "= "  + cal.division(a, b));
+		
+		/*
 		try{
 			float divResult = Calculation.division(a, b);
 			System.out.println(" Division of " + a + " by " + b + " is : " + divResult);
@@ -24,7 +37,7 @@ public class Client {
 		
 		System.out.println(" Tangent of " + angleInRadian + " is : " + tanValue );
 		
-
+*/
 
 	}
 

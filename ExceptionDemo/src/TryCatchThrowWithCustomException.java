@@ -15,6 +15,7 @@ public class TryCatchThrowWithCustomException {
 		 if (a1 == 0.0f || b1 == 0.0f){
 			 System.out.println(" addition with zeo is not allowed");
 			 throw new ZeoNotAllowedException("Sorry zeros are not allowed");
+			 //System.out.println(" addition with zeo is not allowed");
 		 }
 		 //throw new RuntimeException(" who can stop me !!");
 		  return a1 + b1;

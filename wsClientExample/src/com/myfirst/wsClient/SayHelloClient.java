@@ -15,7 +15,7 @@ public class SayHelloClient {
 
         System.out.println( ((BindingProvider)sh).toString() );
 
-        System.out.println(sh.getGreeting("ABC"));
+        System.out.println(sh.getGreeting("Patrice"));
 
     }
 }

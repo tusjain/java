@@ -11,6 +11,7 @@ package annotation.demo;
 		)
 public class UseCustomAnnotation {
 	// documentation here
+	
 	public void m1(){
 		
 	}

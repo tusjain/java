@@ -4,17 +4,23 @@
  	xsi:schemaLocation="http://www.springframework.org/schema/beans
  	http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-  <com.bean id="parent" class="inheritanceInSpring.MyBean" >
+  <bean id="parent" class="inheritanceInSpring.MyBean" >
 	  <property name="name" value="parent.com"/>
-   </com.bean>
+   </bean>
 
-  <com.bean id="child" class="inheritanceInSpring.MyBean" parent="parent">
+  <bean id="child" class="inheritanceInSpring.MyBean" parent="parent">
 	  <property name="address" value="Rohini"/>
 	  <property name="name" value="KashIt.com"/>
-  </com.bean>
+  </bean>
 
-  <com.bean id="subchild" class="inheritanceInSpring.MyBean" parent="child">
+  <bean id="subchild" class="inheritanceInSpring.MyBean" parent="child">
 	  <property name="name" value="PleaseOK.com"/>
  	  <property name="address" value="Noida"/>
-   </com.bean>
+   </bean>
+   
+    <bean id="subsubchild" class="inheritanceInSpring.YourBean" parent="subchild">
+	  <property name="name" value="This is outrageous"/>
+ 	  <property name="address" value="Sunnyvale"/>
+ 	 
+   </bean>
 </beans>

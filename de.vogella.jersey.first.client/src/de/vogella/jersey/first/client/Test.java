@@ -27,10 +27,14 @@ public class Test {
     //POST
     //System.out.println(service.path("rest").path("hello/bar").accept(MediaType.TEXT_HTML).post(String.class));
     // GET with parameters
-    System.out.println(service.path("rest").path("hello").queryParam("item", "5").accept(MediaType.TEXT_PLAIN).get(String.class));
+    //System.out.println(service.path("rest").path("hello").queryParam("item", "5").accept(MediaType.TEXT_PLAIN).get(String.class));
     //http://localhost:8080/de.vogella.jersey.first/rest/hello?a=5&b=6
-    //System.out.println(service.path("rest").path("hello/foo").queryParam("item", "5").accept(MediaType.TEXT_PLAIN).get(String.class));
+    //System.out.println(service.path("rest").path("hello/fooo").queryParam("item", "5").accept(MediaType.TEXT_PLAIN).get(String.class));
     //http://localhost:8080/de.vogella.jersey.first/rest/hello/foo?item=5
+    //System.out.println(service.path("rest").path("hello/foo2").queryParam("item1", "5").queryParam("item2", "6").accept(MediaType.TEXT_PLAIN).post(String.class));
+    //http://localhost:8080/de.vogella.jersey.first/rest/hello/foo?item1=5&item2=6
+    //System.out.println(service.path("rest").path("hello/foo2").queryParam("item1", "5").accept(MediaType.TEXT_PLAIN).post(String.class));
+    //http://localhost:8080/de.vogella.jersey.first/rest/hello/foo?item1=5
     
     // Get JSON text
    //System.out.println(service.path("rest").path("hello").accept(MediaType.APPLICATION_JSON).get(String.class));

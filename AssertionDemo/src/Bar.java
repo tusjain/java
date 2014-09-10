@@ -1,5 +1,6 @@
 public class Bar{
   public void m1( int value ){
+    //assert 0 <= value ;
     assert 0 <= value : "Value must be non-negative: value= " + value;
     System.out.println( "OK" );
   }

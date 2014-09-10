@@ -10,8 +10,8 @@ public class ArrayDemo {
 	String names2[] = {"Neel", "Vidur", "Chan"};
 	
 	static String houseNumber2[][] = new String[4][4];
-	int houseNumber3[][][] = new int[4][4][2];
-	int houseNumber4[][][][] = new int[4][4][2][5];
+	static int houseNumber3[][][] = new int[4][4][2];
+	static int houseNumber4[][][][] = new int[6][4][2][5];
 	
 	public static void main(String[] args) {
 		for(int i=0; i<= 2; i++){
@@ -29,5 +29,10 @@ public class ArrayDemo {
 				System.out.println(houseNumber2[i][j]);
 			}
 		}
+		
+		System.out.println(" length of names: "+ names.length);
+		System.out.println(" length of houseNumber3: "+ houseNumber3.length);
+		System.out.println(" length of houseNumber4: "+ houseNumber4.length);
+		
 	}
 }

@@ -1,6 +1,7 @@
 package vehicle;
 
  abstract public class Car {
+//abstract public class Car implements Vechical{
 	Wheel wheel[];
 	
 	abstract void forwardMove();

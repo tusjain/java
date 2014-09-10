@@ -1,15 +1,20 @@
 public  class Box {
-	double width=0.0;
-	double height;
+	public double width=0.0;
+	private double height;
 	double depth;
+	final String color = "Blue";
 	static String material = "foam";
+	String texture = "Smooth";
 	
 	// sets dimensions of the box
-	void setDim(double w, double h, double d){
-		width = w; 
+	public void setDim(double width, double h, double d){
+		this.width = width; 
 		height = h; 
 		depth = d;
 		}
+	void setWidth(double w){
+		width = w;
+	}
 	 double volume() {
 		return width * height * depth; }
 	 
@@ -30,7 +35,7 @@ public  class Box {
 		 return 2*(d*h + h*w + w*d);
 	 }
 	
-	Box(){
+	public Box(){
 		// code here
 		}
 	
@@ -42,7 +47,22 @@ public  class Box {
 	
 	Box(double width,  double depth ){
 		this.width = width;
-		
 		this.depth = depth;
 	}
-}//end of class
+	
+	/*void changeColor(){
+		color = "RED";
+	}*/
+	
+	final void changeTexture(String texture){
+		this.texture = texture;
+	}
+	
+	void changeTexture(){
+		this.texture = "Rough";
+	}
+	
+	protected void finalize(){	
+		System.out.println(" I am in finalize");
+	} 
+}

@@ -1,6 +1,5 @@
 package a.b.c;
 
-import junit.framework.Assert;
 import junit.framework.TestCase;
 
 public class CounterTestCase  extends TestCase{
@@ -16,7 +15,7 @@ public class CounterTestCase  extends TestCase{
 		counter.increment();
 		int i2= counter.getCount();
 		boolean b1 = false;
-		if (i2-i1 == 2){
+		if (i2-i1 == 1){
 			b1 = true;
 		}
 		assertTrue(b1);

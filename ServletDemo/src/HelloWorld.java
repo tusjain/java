@@ -21,6 +21,7 @@ public class HelloWorld extends HttpServlet {
       // Set response content type
       response.setContentType("text/html");
 
+      message=request.getParameter("t11") + " " + request.getParameter("t22");
       // Actual logic goes here.
       PrintWriter out = response.getWriter();
       out.println("<h1>" + message + "  in  Post</h1>");

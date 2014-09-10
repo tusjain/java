@@ -13,6 +13,8 @@ public class TestDB {
 		Connection connection = null;
 		Statement statement = null;
 		ResultSet results = null;
+		PreparedStatement pst = null;
+		CallableStatement cst = null;
 		
 		try {
 			Class.forName(driver);
@@ -21,10 +23,20 @@ public class TestDB {
 			String user = "root", password="root";
 			connection = DriverManager.getConnection(url, user, password);
 			statement = connection.createStatement();
+			
+			
+			
 			String query =
 					"SELECT id, name FROM actor";
+			
+			//pst = connection.prepareStatement(query);
+			//cst = connection.prepareCall("nameOfStoredProcedure (?,?)");
+			//cst.setInt(1, 6);
+			//cst.setInt(2, 90);
 			// Execute query and save results.
-			results = statement.executeQuery(query);
+			//results = statement.executeQuery(query);
+			//int i = cst.executeUpdate();
+			//results = pst.executeQuery();
 			//Print column names.
 			String divider = "-----+------+-----";
 			System.out.println("Col1 = id | Col2 = name \n" + divider);

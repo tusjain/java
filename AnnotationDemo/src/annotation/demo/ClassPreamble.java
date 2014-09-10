@@ -1,5 +1,7 @@
 package annotation.demo;
+import java.lang.annotation.*;
 
+//@Documented
 public @interface ClassPreamble {
 	String author();
 	String date();

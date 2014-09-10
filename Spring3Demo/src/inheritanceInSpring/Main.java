@@ -9,5 +9,10 @@ public class Main {
   System.out.println(bf.getBean("parent"));
   System.out.println(bf.getBean("child"));
   System.out.println(bf.getBean("subchild"));
+  System.out.println(bf.getBean("subsubchild"));
+  
+  YourBean yb = (YourBean) bf.getBean("subsubchild");
+  yb.setName("Bush Jr.");
+  System.out.println("Value of name1 in YourBean : "+yb.getName1());
  }
 }

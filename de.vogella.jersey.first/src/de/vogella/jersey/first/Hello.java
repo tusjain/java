@@ -95,7 +95,20 @@ return "In DElete of foo3 values for first list  are " + item1 + "  /n and value
 @GET
 @Produces(MediaType.APPLICATION_JSON)
 public String sayJSONTextHello() {
- return "Hello Jersey in JSON";
+ return "Hello Jersey in JSON "
+ 		+ "{"
+ +" 'firstName': 'John',"
+ +" 'lastName': 'Smith',"
+  +"'isAlive': true,"
+ +" 'age': 25,"
+ +" 'height_cm': 167.6,"
+  +"'address': {"
+  +"  'streetAddress': '21 2nd Street',"
+   +" 'city': 'New York',"
+   +" 'state': 'NY',"
+  +"  'postalCode': '10021-3100'"
+  +" }"
+  +" }";
 }
 
 //This method is called if APPLICATION_JSON and  TEXT_PLAIN is request

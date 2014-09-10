@@ -44,6 +44,10 @@ public class StringManupulation {
 		// StringBuffer --> Mutable, Thread safe
 		
 		
+		StringBuffer stBuffer1 = new StringBuffer("Hello");
+		StringBuffer stBuffer2 = new StringBuffer("California");
+		//stBuffer2 = stBuffer1 + stBuffer2;
+		stBuffer2 = stBuffer2.append(stBuffer1);
 	}
 
 }

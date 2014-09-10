@@ -4,6 +4,8 @@ public class ClassWithVariable {
 	
 	int i=10;
 	public String s1 = "Hello";
+	
+	String str = new String("Hello");
 	private boolean b1;
 	public static int j = 20;
 	

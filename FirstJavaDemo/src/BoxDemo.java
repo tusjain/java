@@ -7,6 +7,11 @@ public class BoxDemo {
 			mybox1.setDim(10,20,15);
 			mybox2.setDim(3,6,9);
 			
+			//mybox1.height = 10;
+			//mybox1.color = "GREY";
+			mybox1.changeTexture("Rough");
+			
+			
 			/*
 			System.out.println("Volume is :" + mybox1.volume());
 			System.out.println("Volume is :" + mybox2.volume());
@@ -31,7 +36,7 @@ public class BoxDemo {
 			
 			System.out.println("myBox2 is " + mybox2.material);
 			
-			
+			//mybox1.finalize();
 			
 			
 		}//end of main

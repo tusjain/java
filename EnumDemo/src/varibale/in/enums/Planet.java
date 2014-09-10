@@ -10,6 +10,8 @@ public enum Planet {
     SATURN  (5.688e+26, 6.0268e7),
     URANUS  (8.686e+25, 2.5559e7),
     NEPTUNE (1.024e+26, 2.4746e7);
+    
+   Cat cat;
 
     private final double mass;   // in kilograms
     private final double radius; // in meters
@@ -39,7 +41,7 @@ public enum Planet {
         return otherMass * surfaceGravity();
     }
     public static void main(String[] args) {
-    	/*
+    
         if (args.length != 1) {
             System.err.println("Usage: java Planet <earth_weight>");
             System.exit(-1);
@@ -49,10 +51,8 @@ public enum Planet {
         for (Planet p : Planet.values()){
            System.out.printf("Your weight on %s is %f%n", p, p.surfaceWeight(mass));
         }
-        */
+        
     	
     	System.out.println("are two planes are equal:  " + equal());
-    }
-    
-    	
+    }    	
 }

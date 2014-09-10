@@ -1,17 +1,17 @@
 package vehicle;
 
 public class CamryLE extends Camry{
-	int seat = 4;
+	//final int seats=4;
 	String seatCovering ="Cloth";
 	void stop(){
 		System.out.println("This is Camry LE or SE  stop - not using ABS");
 	}
 	
-	public void consumeFuel(){
-		System.out.println(" I am testing super");
-		super.consumeFuel();
+	/*public void consumeFuel(){
+		//System.out.println(" I am testing super");
+		//super.consumeFuel();
 		System.out.println("Camry LE is consuming fuel");
-	}
+	}*/
 	
 	CamryLE(String seatCovering){
 		this.seatCovering = seatCovering;
