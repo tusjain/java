@@ -8,18 +8,32 @@ public class CounterTestCase  extends TestCase{
 	protected void setUp(){
 		counter = new Counter();
 	}
-	protected void tearDown(){}
+	protected void tearDown(){
+		counter = null;
+	}
 	
 	public void testIncrement(){
 		int i1= counter.getCount();
 		counter.increment();
 		int i2= counter.getCount();
+		/*
 		boolean b1 = false;
 		if (i2-i1 == 1){
 			b1 = true;
 		}
-		assertTrue(b1);
+		assertTrue(b1);\
+		*/
 		//assertTrue(i2-i1 == 1);
+		/*
+		boolean b1 = true;
+		if (i2-i1 == 1){
+			b1 = false;
+		}
+		assertFalse(b1);
+		*/
+		
+		
+		
 	}
 	public void testDecrement(){
 		int i1= counter.getCount();
