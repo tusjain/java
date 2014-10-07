@@ -14,8 +14,16 @@ table,th,td {
 </head>
 <body>
 
+<c:out value="This is inside out"> </c:out>
+
 // use bean to create object of emp class and name it empList
 // set the values of attributes of empList
+
+<jsp:useBean id = "empList" class = "com.kashit.Employee"  scope="page"/>
+<c:set var="empList.id" value="3" scope="page" />
+<c:out value="${empList.id}"> </c:out>
+
+
 
 	<%-- Using JSTL forEach and out to loop a list and display items in table --%>
 	<table>
@@ -25,11 +33,16 @@ table,th,td {
 				<th>Name</th>
 				<th>Role</th>
 			</tr>
-			<c:forEach items="${requestScope.empList}" var="emp">
+			<c:forEach items="${page.empList}" var="emp">
 				<tr>
 					<td><c:out value="${emp.id}"></c:out></td>
 					<td><c:out value="${emp.name}"></c:out></td>
 					<td><c:out value="${emp.role}"></c:out></td>
+				</tr>
+				<tr>
+					<td><c:out value="${empList.getId()}"></c:out></td>
+					<td><c:out value="${empList.getName()}"></c:out></td>
+					<td><c:out value="${empList.getRole()}"></c:out></td>
 				</tr>
 			</c:forEach>
 		</tbody>
@@ -63,6 +76,6 @@ table,th,td {
 	<br>
 	<br>
 	<%-- c:url example --%>
-	<a href="<c:url value="${requestScope.url }"></c:url>">Google</a>
+	<a href="<c:url value="${requestScope.url }"></c:url>">index.html</a>
 </body>
 </html>

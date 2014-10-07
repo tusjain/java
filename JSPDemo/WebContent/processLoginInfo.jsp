@@ -28,6 +28,8 @@
  
  session.setAttribute("myFirstAttribute", s1);
  
+ //out.println(session.getAttribute("myFirstAttribute"));
+ 
 // out.println(session.getAttribute(s1));
 /*
 */

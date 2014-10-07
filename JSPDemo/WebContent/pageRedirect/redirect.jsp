@@ -18,7 +18,7 @@
    //response.setHeader("Location", "http://www.google.com"); 
 %>
 
-<% response.sendRedirect("http://architecture-soa-bpm-eai.blogspot.com/"); %>
+<%-- response.sendRedirect("http://architecture-soa-bpm-eai.blogspot.com/"); --%>
 
 </body>
 </html>

@@ -24,15 +24,23 @@ public class HelloWorld extends HttpServlet {
       message=request.getParameter("t11") + " " + request.getParameter("t22");
       // Actual logic goes here.
       PrintWriter out = response.getWriter();
-      out.println("<h1>" + message + "  in  Post</h1>");
+      out.println("<h1>" + message + "  in  Get</h1>");
+      /*
      try {
 		Thread.sleep(10000);
 	} catch (InterruptedException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();
 	}
+	*/
       //destroy();
   }
+    
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+    	doGet(request, response);
+    	 PrintWriter out = response.getWriter();
+         out.println("<h1>" + message + "  in  Post</h1>");
+    }
   
   /**
   public void service(ServletRequest req, ServletResponse res) throws ServletException, java.io.IOException{

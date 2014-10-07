@@ -10,5 +10,5 @@
 
 <%= request.getAttribute("title")%>
 
-<jsp:forward page="subFolder/afterForwardJSP.jsp" /> 
 
+<jsp:forward page="subFolder/afterForwardJSP.jsp" /> 

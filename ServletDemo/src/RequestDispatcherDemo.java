@@ -19,8 +19,7 @@ public class RequestDispatcherDemo extends HttpServlet {
 		performTask(request, response);
 	}
 
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException,
-			IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		performTask(request, response);
 	}
 
@@ -38,6 +37,8 @@ public class RequestDispatcherDemo extends HttpServlet {
 			//RequestDispatcher rd = request.getRequestDispatcher("fromRequestDispatcher.jsp");
 			RequestDispatcher rd = request.getRequestDispatcher("/fromRequestDispatcher.jsp");
 			//RequestDispatcher rd = request.getRequestDispatcher("/index.html");
+			//RequestDispatcher rd = request.getRequestDispatcher("http://google.com");
+			
 			System.out.println("Request Dispather got created :" + rd.toString() +"<br/>" );
 			if ("include".equalsIgnoreCase(action)) {
 				System.out.println("it is included <br/>" );

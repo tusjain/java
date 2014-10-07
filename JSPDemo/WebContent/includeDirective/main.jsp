@@ -11,7 +11,14 @@ This jsp has one include directive <br>
 
 <% out.println("Java code in main"); %><br>
 
-<%@ include file="myFooter.jsp"%>
+<%@ include file="myFooter.jsp"%><br><br>
+
+
+<% out.println("Let me add another include directive"); %>
+<%-- @include file="http://google.com" --%>
+<br>
+
+
 
 </body>
 </html>
