@@ -7,5 +7,14 @@
 </head>
 <body>
     <a href="hello.htm">Say Hello</a>
+    
+    <form action="requestURI.htm">
+    
+    	User Name: <input type ="text" id= "userName" name= "serName"></input><br>
+    	Password: <input type ="text" id= "password" name= "password"></input><br>
+    	
+    	<input type="submit" id = "submitButton" name="submitButton">
+    
+    </form>
 </body>
 </html>

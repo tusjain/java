@@ -41,5 +41,6 @@ xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.sprin
  		<property name="interceptorNames"><list><value>hijackAroundMethodBean</value></list>
 		</property>
 	</bean>
+	
 
 </beans>

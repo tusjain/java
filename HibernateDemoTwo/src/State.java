@@ -14,8 +14,7 @@ public class State {
 	@Column(name="State_Population")
     long statePopulation;
 	
-	public State()
-	{
+	public State(){
 		
 	}
 	public State(String stateName, long statePopulation) {

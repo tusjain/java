@@ -54,9 +54,11 @@ public class App {
 		
 		System.out.println("*************************Before Advice");
 		cust0.printName();
+		/*
 		System.out.println("*************************Before Advice");
 		cust0.printURL();
 		System.out.println("*************************Before Advice");
+		*/
 		/*
 		try {
 			cust0.printThrowException();

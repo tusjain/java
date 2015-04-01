@@ -27,11 +27,8 @@ public static void main(String[] args) {
     
     // KashItHello obj = (KashItHello) context.getBean("KashItHelloBean");
 	
-	
-	
 	myBean.sayHello();
-	
-	
+		
 	KashItHello myHello = (KashItHello) beanFactory.getBean("KashItHelloBean");
 	
 	myHello.hello();

@@ -8,7 +8,8 @@ import org.springframework.stereotype.Component;
 public class Address {
 
 	@Autowired
-	public Address(@Value("Flat No 90") String flatNo,@Value("2B") String bldgNo, @Value("Street No 123") String streetNo, @Value("San Francisco") String city,@Value("123456") int pincode) {
+	public Address(@Value("Flat No 90") String flatNo,@Value("2B") String bldgNo, @Value("Street No 123") String streetNo, 
+			@Value("San Francisco") String city,@Value("123456") int pincode) {
 		super();
 		this.flatNo = flatNo;
 		this.bldgNo = bldgNo;

@@ -4,6 +4,9 @@ public class Calculation {
 	float number1;
 	float number2;
 	
+	public Calculation() {
+		System.out.println(" I am in default constructor");
+	}
 	public static float addition(float number1, float number2){
 		float sum = number1+ number2;
 		//System.out.println("Line 1");
@@ -26,6 +29,7 @@ public class Calculation {
 	
 	public static float division(float number1, float number2){
 		System.out.println("input numbers " + number1 + " & " + number2);
+		/*
 		try{
 			if(number2 ==0.0f){
 				System.out.println("You can not divide a number by zero");
@@ -34,7 +38,7 @@ public class Calculation {
 		}catch(Exception e){
 			e.printStackTrace();
 		}
-		
+		*/
 			
 		/*if(number2 ==0.0f){
 			System.out.println("You can not divide a number by zero");

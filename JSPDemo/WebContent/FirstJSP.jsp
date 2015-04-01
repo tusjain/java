@@ -12,7 +12,6 @@ private String foo = "This is Foo";
 public String getFoo(){
 		return this.foo; 
 	}
-  
 %>
 
 <% 
@@ -24,7 +23,6 @@ String myVar = "Today is Wednesday";
 %>
 
 <%= a %> 
-
 
 <%= 20 %> 
 
@@ -44,22 +42,15 @@ Current Balance:<%=actBalance %><br>
 
 <% System.out.println("I am in System.out.print"); %>
 
-
-
+<%
+session.setAttribute("firstname", "Magic");
+%>
 
 <% 
-
 String firstName = (String) session.getAttribute("firstname");
 String lastName = (String)session.getAttribute("lastname");
 out.println("Welcome " + firstName +"   " + lastName);
 %>
-
-
-
-
-
-
-
 
 </body>
 </html>

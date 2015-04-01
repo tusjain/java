@@ -77,6 +77,8 @@ public String methodImCalling1(@DefaultValue("All1") @QueryParam(value = "item1"
 @Produces(MediaType.TEXT_PLAIN)
 public String methodImCalling2(@DefaultValue("All1") @QueryParam(value = "item1") final List<String> item1,  
 							   @DefaultValue("All2") @QueryParam(value = "item2") final List<String> item2) {
+	
+	
  return "In Post of foo2 values for first list  are " + item1 + "  /n and values for second list are   " + item2 ;
 }
  
